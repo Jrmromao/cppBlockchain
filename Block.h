@@ -26,7 +26,7 @@ public:
 
 private:
     uint32_t _nIndex;
-    uint32_t _nOnce;
+    int _nOnce;
     string _sData;
     string _Hash;
     time_t  _tTime;
