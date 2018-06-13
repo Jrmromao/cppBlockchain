@@ -61,3 +61,13 @@ inline string Block::_calculateHash() const {
 
 }
 
+
+string Block::hashFile(string f) {
+
+    stringstream ss;
+    ss<<f;
+
+    return sha256(ss.str());
+
+
+}

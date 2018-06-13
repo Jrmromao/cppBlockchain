@@ -9,7 +9,7 @@
 
 #include <cstdint>
 #include <iostream>
-
+#include <fstream>
 
 using namespace std;
 
@@ -23,7 +23,7 @@ public:
     void MineBlock(uint32_t nDifficulty);
     Block();
     Block(uint32_t nIndexIn, const string &sDateIn);
-
+    string hashFile(string f);
 private:
     uint32_t _nIndex;
     int _nOnce;
@@ -31,5 +31,6 @@ private:
     string _Hash;
     time_t  _tTime;
     string _calculateHash() const ;
+
 
 };
